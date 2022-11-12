@@ -6,11 +6,11 @@
 		},
 		"module": "commonjs",
 		"target": "ES2021",
-		"strict": true,
 		"allowJs": false,
 		"lib": ["es2021"],
 		"types": ["@citizenfx/server", "@types/node"],
 		"moduleResolution": "node",
+		"experimentalDecorators": true,
 		"sourceMap": true,
 		"resolveJsonModule": true,
 		"esModuleInterop": true
