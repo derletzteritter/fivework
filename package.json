@@ -11,6 +11,7 @@
 		"lint": "turbo run lint",
 		"game": "pnpm --filter @fivework/game",
 		"decor": "pnpm --filter @fivework/decorators",
+		"nui": "pnpm --filter @fivework/nui",
 		"format": "prettier --write \"**/*.{ts,tsx,md}\""
 	},
 	"devDependencies": {
