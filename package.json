@@ -3,7 +3,8 @@
 	"version": "0.0.0",
 	"private": true,
 	"workspaces": [
-		"packages/*"
+		"packages/*",
+		"website"
 	],
 	"scripts": {
 		"build": "turbo run build",
@@ -12,6 +13,7 @@
 		"game": "pnpm --filter @fivework/game",
 		"decor": "pnpm --filter @fivework/decorators",
 		"nui": "pnpm --filter @fivework/nui",
+		"website": "pnpm --filter website",
 		"format": "prettier --write \"**/*.{ts,tsx,md}\""
 	},
 	"devDependencies": {
