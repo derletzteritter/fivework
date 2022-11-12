@@ -10,6 +10,7 @@
 		"dev": "turbo run dev --parallel",
 		"lint": "turbo run lint",
 		"game": "pnpm --filter @fivework/game",
+		"decor": "pnpm --filter @fivework/decorators",
 		"format": "prettier --write \"**/*.{ts,tsx,md}\""
 	},
 	"devDependencies": {

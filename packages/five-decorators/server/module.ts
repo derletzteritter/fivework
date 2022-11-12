@@ -8,7 +8,7 @@ export interface IServerModule {
 	globalState: StateBagInterface;
 }
 
-export function ServerModule(constructor: Function);
+export function ServerModule(constructor: any);
 export function ServerModule({ name }: TServerModule);
 export function ServerModule(props: TServerModule) {
 	if (typeof props === 'function') {
@@ -16,7 +16,6 @@ export function ServerModule(props: TServerModule) {
 	}
 
 	return function <T extends { new (...args: any[]): IServerModule }>(constructor: T) {
-		console.log('with name field:', props.name);
 		return class extends constructor {
 			moduleName = props.name;
 		};

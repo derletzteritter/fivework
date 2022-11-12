@@ -1,4 +1,4 @@
-import { BaseModule, ServerModule } from './module';
+import { BaseModule, ServerModule } from '@fivework/decorators';
 
 @ServerModule
 class TestServerModule extends BaseModule {
